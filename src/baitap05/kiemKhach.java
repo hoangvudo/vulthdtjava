@@ -1,6 +1,6 @@
 package baitap05;
 
-public class kiemKhach extends nhanVat {
+public class kiemKhach extends nhanVat implements KieuDiChuyen , KieuTanCong {
 	private int soKiem;
 	private int capDo;
 	
@@ -42,9 +42,41 @@ public class kiemKhach extends nhanVat {
 		System.out.println("Suc manh cua kiem khach la :" + energy);
 		
 	}
+	@Override
+	public void tanCongKhongVuKhi() {
+		// TODO Auto-generated method stub
+		System.out.println("Tan cong khong vu khi");
+		
+	}
+	@Override
+	public void tanCongCoVuKhi() {
+		// TODO Auto-generated method stub
+		System.out.println("Tan cong co vu khi");
+		
+	}
+	@Override
+	public void sangPhai() {
+		// TODO Auto-generated method stub
+		System.out.println("Di chuyen sang phai");
+		
+	}
+	@Override
+	public void sangTrai() {
+		// TODO Auto-generated method stub
+		System.out.println("Di chuyen sang trai");
+		
+	}
+	@Override
+	public void nhayLen() {
+		// TODO Auto-generated method stub
+		System.out.println("Nhay len");
+		
+	}
+	@Override
+	public void boChay() {
+		// TODO Auto-generated method stub
+		System.out.println("Bo chay");
 		
 	}
 	
-	
-	
-
+}

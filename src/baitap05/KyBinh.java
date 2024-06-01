@@ -1,6 +1,6 @@
 package baitap05;
 
-public class KyBinh extends nhanVat {
+public class KyBinh extends nhanVat implements KieuDiChuyen , KieuTanCong  {
 	private boolean guom;
 	private boolean giap;
 	private boolean giao;
@@ -66,5 +66,40 @@ public class KyBinh extends nhanVat {
 		System.out.println("Suc manh cua ky binh la :" + energy);
 		
 	}
-	
+
+	@Override
+	public void sangPhai() {
+		// TODO Auto-generated method stub
+		System.out.println("Di chuyen sang phai");
+		
+	}
+
+	@Override
+	public void sangTrai() {
+		// TODO Auto-generated method stub
+		System.out.println("Di chuyen sang trai");
+		
+	}
+
+	@Override
+	public void nhayLen() {
+		// TODO Auto-generated method stub
+		System.out.println("Nhay len");
+		
+	}
+
+	@Override
+	public void boChay() {
+		// TODO Auto-generated method 
+		System.out.println("Bo Chay !!!!");
+		
+	}
+	@Override
+	public void tanCongCoVuKhi() {
+		System.out.println("Tan cong co vu khi");
+	} 
+	@Override
+	public void tanCongKhongVuKhi() {
+		System.out.println("Tan cong khong vu khi");
+	} 
 }

@@ -1,6 +1,6 @@
 package baitap05;
 
-public class boBinh extends nhanVat {
+public class boBinh extends nhanVat implements KieuDiChuyen , KieuTanCong {
 	private int giao;
 	private boolean khien;
 	private boolean aoGiap;
@@ -43,6 +43,42 @@ public class boBinh extends nhanVat {
 		// TODO Auto-generated method stub
 		double energy = this.getNangLuong();
 		System.out.println("Suc manh cua bo binh :"+ energy);
+	}
+	@Override
+	public void tanCongKhongVuKhi() {
+		// TODO Auto-generated method stub
+		System.out.println("Tan cong khong vu khi");
+		
+	}
+	@Override
+	public void tanCongCoVuKhi() {
+		// TODO Auto-generated method stub
+		System.out.println("Tan cong co vu khi");
+		
+	}
+	@Override
+	public void sangPhai() {
+		// TODO Auto-generated method stub
+		System.out.println("Di chuyen sang phai");
+		
+	}
+	@Override
+	public void sangTrai() {
+		// TODO Auto-generated method stub
+		System.out.println("Di chuyen sang trai");
+		
+	}
+	@Override
+	public void nhayLen() {
+		// TODO Auto-generated method stub
+		System.out.println("Nhay len");
+		
+	}
+	@Override
+	public void boChay() {
+		// TODO Auto-generated method stub
+		System.out.println("Bo chay");
+		
 	}
 	
 }

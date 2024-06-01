@@ -54,9 +54,13 @@ public class nhanVat {
 	
 	public void hanhDong() {
 		System.out.println("...");
+		
 	}
 	
 	public void sucManh() {
 		System.out.println("...");
+	}
+	public void tanCong() {
+		System.out.println("Tan cong co vu khi");
 	}
 }
