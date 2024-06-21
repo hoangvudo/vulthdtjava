@@ -1,6 +1,6 @@
 package bai04.baitap02;
 
-public class Meo {
+public class Meo  {
 	private int soLuong;
 	private String mausac;
 	private String giong;
